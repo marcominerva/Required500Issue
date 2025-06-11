@@ -24,7 +24,7 @@ app.MapPost("/api/todo", (Todo todo) =>
     return TypedResults.Ok();
 })
 .WithSummary("Create a new todo item")
-.WithDescription("If we don't specify a value for the title property, we get a 500 error. If we comment out the 'app.UseExceptionHandler()' line, we'll get a 400 error instead.");
+.WithDescription("If we don't specify a value for the 'title' property, we get a 500 error. If we comment out the 'app.UseExceptionHandler()' line, we'll receive a 400 error instead.");
 
 app.Run();
 
